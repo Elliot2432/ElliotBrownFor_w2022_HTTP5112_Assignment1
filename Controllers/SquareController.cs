@@ -9,11 +9,16 @@ namespace WebApplication1.Controllers
 {
     public class SquareController : ApiController
     {
-        //GET api/square/2
-        //GET api/square/-2
-        //GET api/square/10
 
-        //This Will Square Root The Id
+
+        /// <summary>
+        /// This Will Square Root The Id
+        /// </summary>
+        /// <param name="id"> id number</param>
+        /// <returns>It returns the id number squared</returns>
+        /// Example: GET api/square/2 --> 4
+        /// Example: GET api/square/-2 --> 4
+        /// Example: GET api/square/10 --> 100
         public int Get(int id)
         {
             //This gets the id and multiples it by itself
